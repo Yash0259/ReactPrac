@@ -4,8 +4,7 @@ import axios from 'axios';
 function App() {
   const [tasks, setTasks] = useState([]);
   const [inputValue, setInputValue] = useState("");
-  const [currentPage, setCurrentPage] = useState(1);
-  const [tasksPerPage] = useState(5);
+  
   const url = "http://localhost:3000/Task";
 
   useEffect(() => {
